@@ -10,9 +10,10 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import CastForEducationRoundedIcon from '@mui/icons-material/CastForEducationRounded';
 import logo from '../assets/logo.png'
+import navIcon from '../assets/online-learning 1.svg'
 import { Button } from "@mui/material";
+import Navbar from "./Navbar";
 const drawerWidth = 240;
 
 const SideBar = () => {
@@ -23,11 +24,8 @@ const SideBar = () => {
         position="fixed"
         sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
       >
-        <Toolbar>
-          <Typography variant="h6" noWrap component="div">
-            Permanent drawer
-          </Typography>
-        </Toolbar>
+        <Navbar></Navbar>
+        
       </AppBar>
       <Drawer
         sx={{
@@ -69,8 +67,9 @@ const SideBar = () => {
             <ListItem key={text} disablePadding>
               <ListItemButton sx={{paddingTop:"0px"}}>
                 <ListItemIcon>
-                  <div style={{backgroundColor:"#ffffff", borderRadius: "50%" ,width:"25px" ,height:"25px"}}>
-                  <CastForEducationRoundedIcon sx={{  padding:"2px"  }} /> 
+                  <div style={{backgroundColor:"#ffffff", borderRadius: "50%" ,width:"25px" ,height:"25px", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                  
+                    <img src={navIcon} alt="Icon" />
                   </div>
                 </ListItemIcon>
                 <ListItemText primary={text}  />
