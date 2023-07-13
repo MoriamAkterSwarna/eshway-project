@@ -10,8 +10,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+import CastForEducationRoundedIcon from '@mui/icons-material/CastForEducationRounded';
 import logo from '../assets/logo.png'
 import { Button } from "@mui/material";
 const drawerWidth = 240;
@@ -37,12 +36,15 @@ const SideBar = () => {
           "& .MuiDrawer-paper": {
             width: drawerWidth,
             boxSizing: "border-box",
+            backgroundColor:"#0373BA",
+            color: "#ffffff"
+
           },
         }}
         variant="permanent"
         anchor="left"
       >
-        {/* <Toolbar sx={{ backgroundColor: "#FCB03E"}}/> */}
+        
         <Toolbar
           sx={{
             backgroundColor: "#FCB03E",
@@ -61,32 +63,23 @@ const SideBar = () => {
     <Button variant="contained" sx={{ backgroundColor: "#FCB03E" }}>Announcement</Button>
   </div>
 </Toolbar>
-        <Divider></Divider>
+        <Typography sx={{marginLeft:"10px", marginTop:"20px"}} >Main Menu</Typography>
         <List>
-          {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+          {["All Products", "Posts", "Course Management", "User Management","Test Series Management","Payment Management", "Student Management", "Faculty Management","Calendar"].map((text) => (
             <ListItem key={text} disablePadding>
-              <ListItemButton>
+              <ListItemButton sx={{paddingTop:"0px"}}>
                 <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  <div style={{backgroundColor:"#ffffff", borderRadius: "50%" ,width:"25px" ,height:"25px"}}>
+                  <CastForEducationRoundedIcon sx={{  padding:"2px"  }} /> 
+                  </div>
                 </ListItemIcon>
-                <ListItemText primary={text} />
+                <ListItemText primary={text}  />
               </ListItemButton>
             </ListItem>
           ))}
         </List>
-        <Divider />
-        <List>
-          {["All mail", "Trash", "Spam"].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
+        
+        
       </Drawer>
       <Box
         component="main"
