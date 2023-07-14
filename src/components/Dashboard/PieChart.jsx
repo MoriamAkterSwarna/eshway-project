@@ -28,22 +28,22 @@ const PieChart = () => {
         height={"230px"}
       />
         
-        <div style={{ textAlign: "right",marginRight:"22%" ,position:"absolute", top:"22%" , right:"-13%"}}>
+        <div style={{ textAlign: "right",marginRight:"22%" ,position:"absolute", top:"22%" , right:"-10%"}}>
         
-        <div style={{display:"flex"}}>
-                <Typography variant="body2" sx={{marginRight:"7px"}}>Total Sales</Typography> 
+        <div style={{display:"flex" , justifyContent: "space-between"}}>
+                <Typography variant="body2" sx={{marginRight:"12px"}}>Total Sales</Typography> 
                 <Typography variant="body2">₹25160</Typography>
         </div>
-        <div style={{display:"flex"}}>
-                <Typography variant="body2" fontSize={11} sx={{marginRight:"7px"}}>Academic Courses</Typography> 
+        <div style={{display:"flex" , justifyContent: "space-between"}}>
+                <Typography variant="body2" fontSize={11} sx={{marginRight:"12px"}}>Academic Courses</Typography> 
+                <Typography variant="body2" fontSize={11} >₹25160</Typography>
+        </div>
+        <div style={{display:"flex" , justifyContent: "space-between"}}>
+                <Typography variant="body2" fontSize={11} sx={{marginRight:"12px"}}>Non-Academic Courses</Typography> 
                 <Typography variant="body2" fontSize={11}>₹25160</Typography>
         </div>
-        <div style={{display:"flex"}}>
-                <Typography variant="body2" fontSize={11} sx={{marginRight:"7px"}}>Non-Academic Courses</Typography> 
-                <Typography variant="body2" fontSize={11}>₹25160</Typography>
-        </div>
-        <div style={{display:"flex"}}>
-                <Typography variant="body2" fontSize={11} sx={{marginRight:"7px"}}>Test Series</Typography> 
+        <div style={{display:"flex", justifyContent: "space-between"}}>
+                <Typography variant="body2" fontSize={11} sx={{marginRight:"12px"}}>Test Series</Typography> 
                 <Typography variant="body2" fontSize={11}>₹25160</Typography>
         </div>
         
