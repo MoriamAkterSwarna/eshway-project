@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import PieChart from "./PieChart";
 import Students from "./Students";
+import Events from "./Events";
 
 const Dashboard = () => {
   return (
@@ -44,7 +45,7 @@ const Dashboard = () => {
       <Grid sx={{boxShadow:3}} item xs={3.5}  style={{ marginLeft: "20px" }}>
        
             
-            
+            <Events></Events>
         
       </Grid>
       <Grid sx={{boxShadow:3}} item xs={7.5}  style={{ marginLeft: "20px" }}>
