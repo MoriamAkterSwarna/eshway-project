@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import PieChart from "./PieChart";
 import Students from "./Students";
 import Events from "./Events";
@@ -15,7 +15,7 @@ const Dashboard = () => {
           >
             <Grid item xs={6}>
               <div style={{ backgroundColor: "#aCB503", padding: "10px" }}>
-                1
+                <Typography>Total Students</Typography>
               </div>
             </Grid>
             <Grid item xs={6}>
