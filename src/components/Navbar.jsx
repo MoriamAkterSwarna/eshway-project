@@ -16,7 +16,7 @@ const Navbar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ justifyContent: "space-between" ,flexDirection: { xs: "column", md: "row" },
         alignItems: { xs: "flex-start", md: "center" }, }}>
-          {/* <div style={{display:"flex" , alignItems:"center"}}> */}
+          
           <div style={{display:"flex" , alignItems:"center", flexDirection:"row"}}>
           <IconButton
             size="large"
@@ -100,33 +100,7 @@ const Navbar = () => {
       </Container>
       
 
-      <Toolbar sx={{justifyContent: "flex-end" }}>
-      <Typography>{moment().format(" h:mm a  MMMM Do YYYY")}</Typography>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          marginLeft: "10px",
-        }}
-      >
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          style={{ marginRight: "8px" }}
-        >
-        
-        </svg>
-        <Typography variant="body1">Howdy, username</Typography>
-      </div>
-      <img
-        style={{ marginLeft: "8px", width: "25px", height: "25px" }}
-        src={userImg}
-        alt="User"
-      />
-    </Toolbar>
+    
   
     </>
   );

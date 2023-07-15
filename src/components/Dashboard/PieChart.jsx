@@ -28,10 +28,11 @@ const PieChart = () => {
         height={"230px"}
       />
         
-        <div style={{ textAlign: "right",marginRight:"22%" ,position:"absolute", top:"22%" , right:"-10%" ,
-        transform: "translate( 35%,-50%)",
+        <div style={{ textAlign: "right",marginRight:"22%" ,position:"absolute", top:"15%" , right:"-10%" ,
+        
         "@media (max-width: 780px)": {
-          top: "25%"
+          transform: "translate( 40%,-60%)",
+          
         },}}>
         
         <div style={{display:"flex" , justifyContent: "space-between"}}>
