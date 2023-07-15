@@ -11,7 +11,7 @@ const Events = () => {
     const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    fetch("/public/eventsData.json")
+    fetch("/eventsData.json")
       .then((res) => res.json())
       .then((data) => setEvents(data));
   }, []);

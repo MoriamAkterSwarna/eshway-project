@@ -11,7 +11,7 @@ const Students = () => {
   const [student, setStudent] = useState([]);
 
   useEffect(() => {
-    fetch("/public/studentData.json")
+    fetch("/studentData.json")
       .then((res) => res.json())
       .then((data) => setStudent(data));
   }, []);
