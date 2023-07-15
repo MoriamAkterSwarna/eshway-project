@@ -12,7 +12,7 @@ const Dashboard = () => {
       sx={{ marginTop: "20px" , 
      }}
     >
-      <Grid item xs={5.5} style={{ margin: "8px" }}>
+      <Grid item xs={12} md={5.5} style={{ margin: "8px" }}>
         <div style={{ padding: "10px" }}>
           <Grid
             container
@@ -144,13 +144,13 @@ const Dashboard = () => {
           </Grid>
         </div>
       </Grid>
-      <Grid sx={{ boxShadow: 3 }} item xs={5.5} style={{ margin: "20px" }}>
+      <Grid sx={{ boxShadow: 3 }} item xs={12} md={5.5} style={{ margin: "20px" }}>
         <PieChart></PieChart>
       </Grid>
-      <Grid sx={{ boxShadow: 3 }} item xs={3.5} style={{ marginLeft: "20px" }}>
+      <Grid sx={{ boxShadow: 3 }} item xs={12} md={3.5} style={{ marginLeft: "20px" }}>
         <Events></Events>
       </Grid>
-      <Grid sx={{ boxShadow: 3 }} item xs={7.5} style={{ marginLeft: "20px" }}>
+      <Grid sx={{ boxShadow: 3 }} item xs={12} md={7.5}  style={{ marginLeft: "20px" }}>
         <Students></Students>
       </Grid>
     </Grid>
