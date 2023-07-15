@@ -19,8 +19,8 @@ export const options = {
 };
 const PieChart = () => {
     return (
-        <>
-        <Chart style={{position:"relative"}}
+        <div style={{position:"relative"}}>
+        <Chart 
         chartType="PieChart"
         data={data}
         options={options}
@@ -28,7 +28,11 @@ const PieChart = () => {
         height={"230px"}
       />
         
-        <div style={{ textAlign: "right",marginRight:"22%" ,position:"absolute", top:"22%" , right:"-10%"}}>
+        <div style={{ textAlign: "right",marginRight:"22%" ,position:"absolute", top:"22%" , right:"-10%" ,
+        transform: "translate( 35%,-50%)",
+        "@media (max-width: 780px)": {
+          top: "25%"
+        },}}>
         
         <div style={{display:"flex" , justifyContent: "space-between"}}>
                 <Typography variant="body2" sx={{marginRight:"12px"}}>Total Sales</Typography> 
@@ -49,9 +53,10 @@ const PieChart = () => {
         
       </div>
         
-        </>
+        </div>
     );
 };
 
 export default PieChart;
+
 
